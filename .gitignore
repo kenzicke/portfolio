@@ -1,6 +1,16 @@
-# History files
+
+
+# R specific
 .Rhistory
 .Rapp.history
+.RData
+.Ruserdata
+*.Rproj.user/
+
+# System files
+.DS_Store
+Thumbs.db
+
 
 # Session Data files
 .RData
