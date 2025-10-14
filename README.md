@@ -8,11 +8,14 @@ robotic alkalinity titrator and joins it to coral and sample metadata.
 The repository contains three main folders:
 
 data:
-data/raw contains .csv files for raw chemistry data and coral/sample metadata
-data/processed contains the cleaned up version of my data
+
+- data/raw contains .csv files for raw chemistry data and coral/sample metadata
+
+- data/processed contains the cleaned up version of my data
 
 scripts:
-scripts/01_processing contains a single script that reads the raw data, cleans it up, and exports processed data.
+
+- scripts/01_processing contains a single script that reads the raw data, cleans it up, and exports processed data.
 
 
 ## About the data
@@ -20,20 +23,19 @@ scripts/01_processing contains a single script that reads the raw data, cleans i
 ### `data/processed/all_data.rds` contains 66 rows and 11 columns:
 
 - `date` - Character - date sample was taken
-- `sample_num` - bottle identifier
+- `sample_num` - Character -bottle identifier
 - `vessel` - Character - coral vessel the sample was taken from
 - `p_h_pico` - Numeric - pH recorded at time of sample by pico probe
 - `temp` - Numeric - temperature at sample time
 - `treatment` - Character - alkalinity treatment of vessel (one of four)
-                Treatments: 
-                  a ~ 2600 umol/kg
-                  b ~ 2900 umol/kg
-                  c ~ 3200 umol/kg
-                  d ~ 3570 umol/kg
+               - Treatments: 
+                - a ~ 2600 umol/kg
+                - b ~ 2900 umol/kg
+                - c ~ 3200 umol/kg
+                - d- ~ 3570 umol/kg
                   
 - `content` - Character - Vessel either contains baby corals or is a blank
 - `species` - Character - Coral species (pstr or ofav)
 - `salinity` - Numeric - Salinity in ppt of sample
 - `ta_av` - Numeric - Mean total alkalinity of the two sample replicates in umol per kilogram
 - `ta_sd` - Numeric - standard deviation of the two sample replicates
-
