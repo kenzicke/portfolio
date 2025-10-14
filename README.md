@@ -28,14 +28,16 @@ scripts:
 - `p_h_pico` - Numeric - pH recorded at time of sample by pico probe
 - `temp` - Numeric - temperature at sample time
 - `treatment` - Character - alkalinity treatment of vessel (one of four)
-               \n - Treatments:
-               \n - a ~ 2600 umol/kg
-               \n - b ~ 2900 umol/kg
-               \n - c ~ 3200 umol/kg
-               \n - d- ~ 3570 umol/kg
-                  
 - `content` - Character - Vessel either contains baby corals or is a blank
 - `species` - Character - Coral species (pstr or ofav)
 - `salinity` - Numeric - Salinity in ppt of sample
 - `ta_av` - Numeric - Mean total alkalinity of the two sample replicates in umol per kilogram
 - `ta_sd` - Numeric - standard deviation of the two sample replicates
+
+### Treatment information
+Treatments: 
+a ~ 2600 umol/kg,
+b ~ 2900 umol/kg, 
+c ~ 3200 umol/kg, 
+d ~ 3570 umol/kg
+  
