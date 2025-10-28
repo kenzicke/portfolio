@@ -18,6 +18,11 @@ results:
 - results/img contains figures
 
 ## Assignment 2
+
+Content for Assignment 2: 
+scripts/01_processing/data_processing.R
+data/processed/all_data.rds
+
 ### Import and clean treatment chemistry data
 EVR 628 Assignment 2 - Data Wrangling.
 This script analyzes treatment chemistries for a coral larvae settlement experiment from September 2025. It imports the raw bottle data from the Methrom
@@ -48,6 +53,10 @@ d ~ 3570 umol/kg
   
 ## Assignment 3
 
-Visualize data cleaned and transformed in Assignment 2. Two figures saved in the results/img folder. 
+Content for Assignment 3: 
+sctips/03_content/data_visualization.R 
+results/img/figure1.pdf, figure2.pdf
+
+Assignment 3 visualizes the data cleaned and transformed in Assignment 2. Two figures saved in the results/img folder. 
 Figure1 shows treatment chemistry stability over time.
 Figure2 is a statistical boxplot summary of treatments faceted by vessel content, either "blank" or containing "coral"
