@@ -1,9 +1,5 @@
-# Import and clean treatment chemistry data
-EVR 628 Assignment 2 - Data Wrangling.
-This script analyzes treatment chemistries for a coral larvae settlement experiment from September 2025. It imports the raw bottle data from the Methrom
-robotic alkalinity titrator and joins it to coral and sample metadata.
 
-## Respository contents
+# Respository contents
 
 The repository contains three main folders:
 
@@ -17,10 +13,15 @@ scripts:
 
 - scripts/01_processing contains a single script that reads the raw data, cleans it up, and exports processed data.
 
+## Assignment 2
+### Import and clean treatment chemistry data
+EVR 628 Assignment 2 - Data Wrangling.
+This script analyzes treatment chemistries for a coral larvae settlement experiment from September 2025. It imports the raw bottle data from the Methrom
+robotic alkalinity titrator and joins it to coral and sample metadata.
 
-## About the data
+#### About the data
 
-### `data/processed/all_data.rds` contains 66 rows and 11 columns:
+##### `data/processed/all_data.rds` contains 66 rows and 11 columns:
 
 - `date` - Character - date sample was taken
 - `sample_num` - Character -bottle identifier
@@ -34,10 +35,15 @@ scripts:
 - `ta_av` - Numeric - Mean total alkalinity of the two sample replicates in umol per kilogram
 - `ta_sd` - Numeric - standard deviation of the two sample replicates
 
-### Treatment information
+##### Treatment information
 Treatments: 
 a ~ 2600 umol/kg,
 b ~ 2900 umol/kg, 
 c ~ 3200 umol/kg, 
 d ~ 3570 umol/kg
   
+## Assignment 3
+
+Visualize data cleaned and transformed in Assignment 2. Two figures saved in the results/img folder. 
+Figure1 shows treatment chemistry stability over time.
+Figure2 is a statistical boxplot summary of treatments faceted by vessel content, either "blank" or containing "coral"
