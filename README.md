@@ -13,6 +13,10 @@ scripts:
 
 - scripts/01_processing contains a single script that reads the raw data, cleans it up, and exports processed data.
 
+results: 
+
+- results/img contains figures
+
 ## Assignment 2
 ### Import and clean treatment chemistry data
 EVR 628 Assignment 2 - Data Wrangling.
