@@ -352,14 +352,8 @@ display: none;
 </div>
 
 
-<div id="import-and-clean-treatment-chemistry-data" class="section level1">
-<h1>Import and clean treatment chemistry data</h1>
-<p>EVR 628 Assignment 2 - Data Wrangling. This script analyzes treatment
-chemistries for a coral larvae settlement experiment from September
-2025. It imports the raw bottle data from the Methrom robotic alkalinity
-titrator and joins it to coral and sample metadata.</p>
-<div id="respository-contents" class="section level2">
-<h2>Respository contents</h2>
+<div id="respository-contents" class="section level1">
+<h1>Respository contents</h1>
 <p>The repository contains three main folders:</p>
 <p>data:</p>
 <ul>
@@ -373,12 +367,31 @@ data</p></li>
 <li>scripts/01_processing contains a single script that reads the raw
 data, cleans it up, and exports processed data.</li>
 </ul>
+<p>results:</p>
+<ul>
+<li>results/img contains figures</li>
+</ul>
+<div id="assignment-2" class="section level2">
+<h2>Assignment 2</h2>
+<div id="content-for-assignment-2" class="section level3">
+<h3>Content for Assignment 2:</h3>
+<p>scripts/01_processing/data_processing.R</p>
+<p>data/processed/all_data.rds</p>
 </div>
-<div id="about-the-data" class="section level2">
-<h2>About the data</h2>
-<div id="dataprocessedall_data.rds-contains-66-rows-and-11-columns" class="section level3">
-<h3><code>data/processed/all_data.rds</code> contains 66 rows and 11
-columns:</h3>
+<div id="purpose" class="section level3">
+<h3>Purpose</h3>
+<div id="import-and-clean-treatment-chemistry-data" class="section level4">
+<h4>Import and clean treatment chemistry data</h4>
+<p>EVR 628 Assignment 2 - Data Wrangling. This script analyzes treatment
+chemistries for a coral larvae settlement experiment from September
+2025. It imports the raw bottle data from the Methrom robotic alkalinity
+titrator and joins it to coral and sample metadata.</p>
+</div>
+<div id="about-the-data" class="section level4">
+<h4>About the data</h4>
+<div id="dataprocessedall_data.rds-contains-66-rows-and-11-columns" class="section level5">
+<h5><code>data/processed/all_data.rds</code> contains 66 rows and 11
+columns:</h5>
 <ul>
 <li><code>date</code> - Character - date sample was taken</li>
 <li><code>sample_num</code> - Character -bottle identifier</li>
@@ -399,10 +412,28 @@ sample replicates in umol per kilogram</li>
 replicates</li>
 </ul>
 </div>
-<div id="treatment-information" class="section level3">
-<h3>Treatment information</h3>
+<div id="treatment-information" class="section level5">
+<h5>Treatment information</h5>
 <p>Treatments: a ~ 2600 umol/kg, b ~ 2900 umol/kg, c ~ 3200 umol/kg, d ~
 3570 umol/kg</p>
+</div>
+</div>
+</div>
+</div>
+<div id="assignment-3" class="section level2">
+<h2>Assignment 3</h2>
+<div id="content-for-assignment-3" class="section level3">
+<h3>Content for Assignment 3:</h3>
+<p>sctips/03_content/data_visualization.R</p>
+<p>results/img/figure1.pdf, figure2.pdf</p>
+</div>
+<div id="purpose-1" class="section level3">
+<h3>Purpose</h3>
+<p>Assignment 3 visualizes the data cleaned and transformed in
+Assignment 2. Two figures saved in the results/img folder. Figure1 shows
+treatment chemistry stability over time. Figure2 is a statistical
+boxplot summary of treatments faceted by vessel content, either “blank”
+or containing “coral”</p>
 </div>
 </div>
 </div>

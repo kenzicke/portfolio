@@ -19,11 +19,15 @@ results:
 
 ## Assignment 2
 
-Content for Assignment 2: 
+### Content for Assignment 2: 
+
 scripts/01_processing/data_processing.R
+
 data/processed/all_data.rds
 
-### Import and clean treatment chemistry data
+
+### Purpose 
+#### Import and clean treatment chemistry data
 EVR 628 Assignment 2 - Data Wrangling.
 This script analyzes treatment chemistries for a coral larvae settlement experiment from September 2025. It imports the raw bottle data from the Methrom
 robotic alkalinity titrator and joins it to coral and sample metadata.
@@ -45,6 +49,7 @@ robotic alkalinity titrator and joins it to coral and sample metadata.
 - `ta_sd` - Numeric - standard deviation of the two sample replicates
 
 ##### Treatment information
+
 Treatments: 
 a ~ 2600 umol/kg,
 b ~ 2900 umol/kg, 
@@ -53,9 +58,14 @@ d ~ 3570 umol/kg
   
 ## Assignment 3
 
-Content for Assignment 3: 
+### Content for Assignment 3: 
+
 sctips/03_content/data_visualization.R 
+
 results/img/figure1.pdf, figure2.pdf
+
+
+### Purpose
 
 Assignment 3 visualizes the data cleaned and transformed in Assignment 2. Two figures saved in the results/img folder. 
 Figure1 shows treatment chemistry stability over time.
