@@ -40,7 +40,7 @@ FL_counties <- read_sf("data/raw/Florida_County_Boundaries_with_FDOT_Districts_-
   rename(county_name = name,
          county_fips = first_fips)
 
-# Shave down to South Florida only
+# Crop to South Florida only
 south_FL <- FL_counties |>
   filter(county_name %in% c("Miami-Dade", "Monroe", "Broward")) |>
   st_crop(xmax = -81,
@@ -53,11 +53,13 @@ depth <- rast("data/raw/depth_raster.tif") %>%
   crop(south_FL)
 
 mapview(reefs_sf)
+
 # labels need to be nudged independently, mutate reefs_sf tribble
 reefs_sf <- reefs_sf |>
   mutate(nudge_x = c(-0.1, 0.05, -0.16),
          nudge_y = c(-0.05, 0.05, -0.05))
 
+# Create spatial visualization
 figure <- ggplot() +
   geom_spatraster_contour(data = depth,
                           aes(colour = after_stat(level))) +
@@ -85,4 +87,6 @@ figure <- ggplot() +
   annotation_scale(location = "bl")
 
 figure
+
+# Save figure as pdf
 ggsave(filename = "results/img/map.pdf", plot = figure)
