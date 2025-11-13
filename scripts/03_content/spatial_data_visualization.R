@@ -18,7 +18,6 @@ library(terra)         # Working with raster data
 library(tidyterra)     # Working with raster data in tidy approach
 library(mapview)       # To quickly inspect data
 library(janitor)
-library(ggrepel)
 
 # Create tribble with coordinates of reefs where larvae were collected
 reefs <- tribble(~reef, ~lat, ~lon, ~species,
@@ -57,7 +56,7 @@ mapview(reefs_sf)
 # labels need to be nudged independently, mutate reefs_sf tribble
 reefs_sf <- reefs_sf |>
   mutate(nudge_x = c(-0.1, 0.05, -0.16),
-         nudge_y = c(-0.04, 0.04, -0.04))
+         nudge_y = c(-0.05, 0.05, -0.05))
 
 ggplot() +
   geom_spatraster_contour(data = depth,
@@ -78,10 +77,10 @@ ggplot() +
   labs(title = "Source reefs of coral larvae",
        x = "Longitude",
        y = "Latitude",
-       colour = "Depth",
+       colour = "Depth (m)",
        caption = "Coral gametes were collected from reefs off of Key Largo,
        then ransported and fertilized at the Rosenstiel School.
-       This data sourced by KMC.                        ") +
+       This data was created by KMC.                    ") +
   annotation_north_arrow(location = "tl") +
   annotation_scale(location = "bl")
 
