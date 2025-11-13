@@ -58,7 +58,7 @@ reefs_sf <- reefs_sf |>
   mutate(nudge_x = c(-0.1, 0.05, -0.16),
          nudge_y = c(-0.05, 0.05, -0.05))
 
-ggplot() +
+figure <- ggplot() +
   geom_spatraster_contour(data = depth,
                           aes(colour = after_stat(level))) +
   geom_sf(data = south_FL) +
@@ -84,5 +84,5 @@ ggplot() +
   annotation_north_arrow(location = "tl") +
   annotation_scale(location = "bl")
 
-
-
+figure
+ggsave(filename = "results/img/map.pdf", plot = figure)
