@@ -70,3 +70,16 @@ results/img/figure1.pdf, figure2.pdf
 Assignment 3 visualizes the data cleaned and transformed in Assignment 2. Two figures saved in the results/img folder. 
 Figure1 shows treatment chemistry stability over time.
 Figure2 is a statistical boxplot summary of treatments faceted by vessel content, either "blank" or containing "coral"
+
+## Assignment 4
+
+### Content for Assignment 4: 
+
+sctips/03_content/spatial_data_visualization.R 
+
+results/img/map.pdf
+
+
+### Purpose
+
+Assignment 4 adds creates a map of South Florida showcasing the reefs where the larvae for the experiment were collected.
