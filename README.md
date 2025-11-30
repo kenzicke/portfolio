@@ -83,3 +83,10 @@ results/img/map.pdf
 ### Purpose
 
 Assignment 4 adds creates a map of South Florida showcasing the reefs where the larvae for the experiment were collected.
+
+
+## Final assignment 
+
+Create a document or presentation using Quarto markdown summarizing and presenting an overview of the project or data you worked with this semester. 
+ 
+[final_report.pdf](final_report.pdf)
