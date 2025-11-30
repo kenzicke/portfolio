@@ -2,7 +2,7 @@
 title: "The effect of alkalinity enrichment on coral larval settlement"
 subtitle: "September 2025 pilot trial"
 author: "Kenzie M. Cooke"
-date: "November 26, 2025"
+date: "November 30, 2025"
 format:
   pdf:
     toc: true
@@ -101,7 +101,7 @@ print(reefs)
 
 **Water chemistry data**
 
-The raw output from Tiamo software, "settlement_alk_data.csv", was first cleanaed and processed. The sample_id field was standardized by trimming with str_extract() to retain only the bottle number, allowing it to be accurately joined to the bottle metadata using left_join(). Because each sample had two replicate total alkalinity (TA) measurements, one final TA and standard deviation value were created by averaging the replicates and using mutate() to generate a new column. The final processed dataset was exported as an .rds and retained only the cleaned bottle ID (sample_num), final TA (ta_av), and TA standard deviation (ta_sd). 
+The raw output from Tiamo software, "settlement_alk_data.csv", was first cleaned and processed. The sample_id field was standardized by trimming with str_extract() to retain only the bottle number, allowing it to be accurately joined to the bottle metadata using left_join(). Because each sample had two replicate total alkalinity (TA) measurements, one final TA and standard deviation value were created by averaging the replicates and using mutate() to generate a new column. The final processed dataset was exported as an .rds and retained only the cleaned bottle ID (sample_num), final TA (ta_av), and TA standard deviation (ta_sd). 
 
 The processed output was then joined to the bottle metadata. Treatment statistics were generated using group_by() and summarize().
 
