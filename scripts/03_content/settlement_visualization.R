@@ -119,9 +119,15 @@ filter_data <- filter_data %>%
               height = 0,
               aes(color = rep)) +
   facet_wrap(~species) +
+  scale_x_discrete(labels = c("ambient",
+                                   "+ 300 umol",
+                                   "+ 600 umol",
+                                   "+ 900 umol")) +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1)) +
   labs(color = "Tile replicate",
        x = "Treatment",
-       y = "% settlement",
-       title = "Percent settled out of 20")
+       y = "% Settlement")
 
-ggsave(filename = "results/img/percent_settled.pdf", plot = p1)
+ggsave(filename = "results/img/percent_settled.pdf", plot = p1, height = 4, width = 5)
+
